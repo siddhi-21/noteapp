@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!--  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"> -->
+    <title>Document</title>
+    <!-- Css link -->
+    <link rel="stylesheet" href="index.css" />
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="login-page">
+            <div class="form" id="form">
+                <!-- Login Form -->
+                <form class="login-form register-login">
+                    <input type="text" name="yourId" id="yourIdis" placeholder="Enter Your ID" required />
+                    <input type="password" name="" id="yourPassword" placeholder="Enter Your Password" required />
+                    <button class="enter"><a href="notes.html">Login </a></button>
+
+
+                    <p class="message">Not registered? <a href="#">registere</a></p>
+                </form>
+                 
+                <!-- Registration form -->
+                <form  class="register-form register">
+                    <input type="text" name="" id="yourNameEnter" placeholder="Enter Your Name" required>
+                    <input type="email" name="" id="yourEmailEnter" placeholder="Enter Your Email" required>
+                    <input type="password" name="" id="cureent-password" placeholder="Create Password">
+
+                    <button class="enter" > <a href="notes.html">Create</a></button>
+                    <p class="message">Alredy registered? <a href="#" class="login">login</a></p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- Jquery CDN Link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     <script>
+         let toggleClass = document.querySelector('.message a');
+
+toggleClass.addEventListener('click', function () {
+
+    $('.login-form ').hide();
+    $('.register-form').show();
+
+
+});
+let login = document.querySelector('.login');
+login.addEventListener('click', function () {
+
+    $('.login-form ').show();
+    $('.register-form').hide();
+});
+
+     </script>
+      
+</body>
+
+</html>

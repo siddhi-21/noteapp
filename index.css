@@ -1,0 +1,191 @@
+body {
+  box-sizing: border-box;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(back.jpg) no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0 0;
+  margin: -1rem;
+}
+.form {
+/*   padding: 4rem; */
+ /*  margin: 0 auto 0; */
+  position: relative;
+  z-index: 1;
+  background-color: #4091aa;
+  max-width: 360px;
+  opacity: 10;
+  margin: 0 auto 100px;
+  padding: 5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.form input {
+  width: 100%;
+  margin: 1.2rem auto 1rem;
+  padding: 15px;
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.form input:hover,
+.form input:active {
+  box-shadow: 1px 1px 3px 4px rgb(211, 212, 211);
+}
+
+.enter {
+  width: 100%;
+  padding: 15px;
+  margin: 1.2rem auto 0.4rem;
+  border-radius: 6px;
+  outline: 0;
+  border: 0;
+  background-color: rgb(3, 255, 108);
+  color: rgb(73, 73, 73);
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+}
+.enter a{
+    text-decoration: none;
+    color:rgb(73, 73, 73); ;
+}
+.enter:hover,
+.enter:active {
+  background-color: rgb(20, 219, 103);
+}
+.form p {
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+}
+.message a {
+  text-decoration: none;
+  color: black;
+}
+.message a:hover,
+.message a:active {
+  color: rgb(70, 64, 64);
+}
+.register {
+  display: none;
+}
+/* Media query */
+@media screen and (max-width: 991px){
+    html{
+       font-size: 80%;  
+        margin: 0;
+    }
+    .form{
+      max-width: 31.25rem;
+      padding: 5.1rem;
+    }
+    .form input{
+      font-size: 1.3rem;
+      /* width: 100%; */
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .enter{
+      padding: 1.063rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+}
+@media screen and (max-width: 714px){
+  html{
+    font-size:70% ;
+  }
+  .form{
+    max-width: 36rem;
+    margin-top: 4rem;
+  }
+  .form input,.enter{
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+}
+@media screen and (max-width: 555px){
+  html{
+    font-size:55% ;
+  }
+  .form{
+    max-width: 41rem;
+    margin-top: 8rem;
+  }
+  .form input,.enter{
+    padding: 17px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 476px){
+  html{
+    font-size:40% ;
+  }
+  .form{
+    max-width: 49rem;
+    margin-top: 14rem;
+  }
+  .form input,.enter{
+    padding: 17px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 102%;
+  
+}
+}
+@media screen and (max-width: 476px){
+  html{
+    font-size:35% ;
+  }
+  .form{
+    max-width: 51rem;
+    margin-top: 23rem;
+  }
+  .form input,.enter{
+    padding: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 13px;
+    width: 100%;
+  
+}
+}
+@media screen and (max-width: 370px){
+  html{
+    font-size:30% ;
+  }
+  .form{
+    max-width: 56rem;
+    margin-top: 27rem;
+  }
+  .form input,.enter{
+    padding: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 13px;
+    width: 100%;
+  
+}
+}
